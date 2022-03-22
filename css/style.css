@@ -786,7 +786,7 @@
     bottom: 1.1rem;
     left: 2rem;
     width: 70%;
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -867,7 +867,7 @@
     color: #424244;
   }
   .contact-us {
-    height: 130vh;
+    height: 150vh;
   }
   .icon-container {
     display: flex;
@@ -913,7 +913,7 @@
     height: 120vh;
   }
   .contact-us {
-    height: 130vh;
+    height: 150vh;
   }
 }
 @media (max-width: 500px) {
