@@ -174,16 +174,12 @@
   width: 90%;
 }
 .service-img {
-  width: 22vw;
-  height: 13vw;
+  width: 400px;
+  height: 300px;
   object-fit: cover;
-  /* box-shadow: 0.3rem 0.3rem 0.1rem #e92929, 0.5rem 0.5rem 0.1rem #a2e946,
-    0.7rem 0.7rem 0.1rem #297ce9, 0.9rem 0.9rem 0.1rem #e92999; */
   transition: all 0.5s;
 }
 .gallery-link:hover .service-img {
-  /* box-shadow: 1rem 2rem 0.1rem #e92929, 2rem 2rem 0.1rem #a2e946,
-    3rem 3rem 0.1rem #297ce9, 4rem 4rem 0.1rem #e92999; */
   filter: blur(0.5rem);
   opacity: 0.5;
   transform: scale(1.1);
@@ -192,7 +188,7 @@
   position: absolute;
   top: 3rem;
   left: 3rem;
-  font-size: 1rem;
+  font-size: 23px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -207,10 +203,10 @@
 }
 .service-description {
   position: absolute;
-  bottom: 3vw;
+  bottom: 6rem;
   left: 3rem;
   width: 70%;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
@@ -546,14 +542,6 @@
   color: #bde17d;
 }
 
-@media (max-width: 500px) {
-  .footer-menu ul {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-}
-
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -581,6 +569,9 @@
 @media screen and (max-width: 1350px) {
   .home {
     height: 100vh;
+  }
+  .services {
+    height: 120vh;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -679,6 +670,29 @@
     flex-direction: column;
     align-items: center;
   }
+  .services {
+    height: 125vh;
+  }
+}
+@media screen and (max-width: 862px) {
+  .service-img {
+    width: 300px;
+    height: 250px;
+  }
+  .service-name {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .service-description {
+    position: absolute;
+    bottom: 5rem;
+    left: 3rem;
+    width: 70%;
+    font-size: 0.75rem;
+  }
 }
 @media screen and (max-width: 750px) {
   .card img {
@@ -755,13 +769,51 @@
     align-items: center;
     justify-content: center;  */
 }
+@media screen and (max-width: 662px) {
+  .service-img {
+    width: 230px;
+    height: 180px;
+  }
+  .service-name {
+    position: absolute;
+    top: 1.9rem;
+    left: 2rem;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .service-description {
+    position: absolute;
+    bottom: 1.1rem;
+    left: 2rem;
+    width: 70%;
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 600px) {
+  .heading img {
+    width: 30vw;
+  }
+  .container {
+    width: 250px;
+  }
+
   .container-about {
     display: flex;
     flex-direction: column;
 
     align-items: center;
     justify-content: center;
+  }
+  .container h3 {
+    font-size: 20px;
+  }
+
+  .container h1 {
+    font-size: 42px;
+  }
+
+  .container p {
+    font-size: 15px;
   }
 
   .info {
@@ -795,13 +847,13 @@
   .about-img img {
     width: 75%;
     height: 75%;
-    margin-left: 25%;
+    margin-left: 20%;
   }
   .team-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 60px;
   }
   .card img {
     width: 50%;
@@ -815,7 +867,7 @@
     color: #424244;
   }
   .contact-us {
-    height: 110vh;
+    height: 130vh;
   }
   .icon-container {
     display: flex;
@@ -839,5 +891,29 @@
   }
   .text {
     width: 90%;
+  }
+  .gallery-link::before {
+    top: 2vw;
+    left: 80%;
+    width: 0.2rem;
+  }
+
+  .gallery-link::after {
+    top: 30%;
+    left: 1.5rem;
+    width: 0;
+    height: 0.2rem;
+  }
+}
+@media screen and (max-width: 522px) {
+  .services {
+    height: 200vh;
+  }
+}
+@media (max-width: 500px) {
+  .footer-menu ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
